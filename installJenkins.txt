@@ -1,11 +1,19 @@
 
 wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key |sudo gpg --dearmor -o /usr/share/keyrings/jenkins.gpg
 
+sleep 3
+
 sudo sh -c 'echo deb [signed-by=/usr/share/keyrings/jenkins.gpg] http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+
+sleep 3
 
 sudo apt update
 
+sleep 5
+
 sudo apt install jenkins -y
+
+sleep 5
 
 sudo systemctl status jenkins
 
