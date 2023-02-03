@@ -8,6 +8,5 @@ sudo git clone https://github.com/officialmanishkr98/project-portfolio_website.g
 cd project-portfolio_website
 
 sudo mv ./* ./..
-cd /var/www/html/
 
 echo "Task Completed SUCCESSFULY"
