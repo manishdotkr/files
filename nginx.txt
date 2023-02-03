@@ -1,7 +1,7 @@
 sudo apt install nginx -y
 
 cd /var/www/html/
-git clone https://github.com/officialmanishkr98/project-portfolio_website.git
+sudo git clone https://github.com/officialmanishkr98/project-portfolio_website.git
 cd project-portfolio_website
 sudo mv -r ./* ./..
 cd ..
