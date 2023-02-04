@@ -1,0 +1,35 @@
+
+//after installation 
+-> sudo mysql_secure_installation
+
+
+// when we try to run above command, it will ask for generate password
+// but when we try to generate it will throw below error
+
+// error of ->
+   Error: SET PASSWORD has no significance for user 'root'@'localhost' as the authentication method used doesn't store authentication data in the MySQL server. Please consider using ALTER USER instead if you want to change authentication parameters
+
+
+//Follow below steps
+
+//Step 1 - Terminate the mysql_secure_installation from another terminal using the killall command:
+            -> sudo killall -9 mysql_secure_installation 
+
+//Step 2 - Open mysql commandline
+            -> sudo mysql
+            
+//Step 3 - Run below command in mysql pallet... Note->put the lasty semicollon, dont remove it!!!
+          -> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+          -> select user, authentication_string, plugin from mysql.user;
+          -> exit
+
+
+//Done
+//Run below command again
+          -> sudo mysql_secure_installation
+//Continue all by pressing -> y n n y + Enter
+
+//After complition run below command with the generated password
+	  sudo mysql -u root -p
+	  
+	  show databases;
