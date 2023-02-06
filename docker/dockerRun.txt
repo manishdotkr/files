@@ -26,16 +26,31 @@ going inside docker container -> docker exec <container id> bash
 docker start -ai myubuntu
 
 
+<------------Software to installed in new Docker ------------>
+ 	 -> update apt upgrade -y
+git	 -> apt install git -y
+ifconfig -> apt install net-tools -y
+nano  	 -> apt install nano -y
+nginx    -> apt install nginx -y
 
-install git 	 -> apt update && apt install git
+
+Removing Docker Containers
+
+-> Run the following command to remove Docker container
+   docker stop <Container_ID>
+   docker rm <Container_ID>
+   
+-> Optional: Run the following command to remove the container forcefully
+   docker rm -f < Container_ID>
+   
+-> Run the following command to remove the Docker image:
+   docker rmi -f <Image_name>
+
+
+
 
 clone the repository -> git clone https://github.com/officialmanishkr98/files.git    &&   cd files
-
-
-install packages -> sudo apt install net-tools && ifconfig
 		 
-		 -> sudo apt update && sudo apt upgrade -y
-		 -> sudo apt install nginx
 		 
 		 
 		 
