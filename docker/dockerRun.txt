@@ -19,8 +19,8 @@ running ubuntu container detached -> docker run -it -d -p 8080:80 ubuntu:latest
 
 
 <------------Running container's interactive shell ------------>
-going inside docker container -> docker exec <container name> bash
-going inside docker container -> docker exec <container id> bash
+going inside docker container -> docker exec -it <container name> bash
+going inside docker container -> docker exec -it <container id> bash
 
 <------------Stoped container's interactive shell ------------>
 docker start -ai myubuntu
