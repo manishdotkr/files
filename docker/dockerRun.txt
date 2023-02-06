@@ -1,13 +1,29 @@
+Docker-----------------------------------
+
 to list all containers -> docker container ls
 			  docker container ps
-			  docker container ps -a
+			  docker container ps -a			  
+			  docker ps -a
 
-running ubuntu container 	  -> docker run -it -p 8080:80 ubuntu
-running ubuntu container detached -> docker run -it -d -p 8080:80 ubuntu
+<------------Create a container with interactive shell------------>
+running ubuntu container 	  -> docker run -it -p 8080:80 ubuntu:latest
+
+<------------Create a container with name and interactive shell------------>
 running nginx container  	  -> docker run -it -p 8080:80 --name mynginx nginx:latest
 
+<------------Create a container with given port ------------>
+running ubuntu container 	  -> docker run -it -p 8080:80 ubuntu:latest [ 8080 belongs to host where 80 belongs to container ]
+
+<------------Create a container without interactive shell ------------>
+running ubuntu container detached -> docker run -it -d -p 8080:80 ubuntu:latest
+
+
+<------------Running container's interactive shell ------------>
 going inside docker container -> docker exec <container name> bash
 going inside docker container -> docker exec <container id> bash
+
+<------------Stoped container's interactive shell ------------>
+docker start -ai myubuntu
 
 
 
