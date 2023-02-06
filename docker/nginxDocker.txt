@@ -1,7 +1,7 @@
 
 apt update && apt upgrade -y
 
-apt install nginx
+apt install nginx -y
 
 apt install net-tools -y
 
