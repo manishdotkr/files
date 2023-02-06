@@ -7,3 +7,8 @@ apt install net-tools -y
 
 ifconfig
 
+
+#sudo service nginx stop
+#sudo service nginx start
+#sudo service nginx status
+
