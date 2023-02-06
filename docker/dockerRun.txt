@@ -1,6 +1,15 @@
 to list all containers -> docker container ls
+			  docker container ps
+			  docker container ps -a
 
-runnindg u ubuntu container -> docker run -it -p 8080:80 ubuntu
+running ubuntu container 	  -> docker run -it -p 8080:80 ubuntu
+running ubuntu container detached -> docker run -it -d -p 8080:80 ubuntu
+running nginx container  	  -> docker run -it -p 8080:80 --name mynginx nginx:latest
+
+going inside docker container -> docker exec <container name> bash
+going inside docker container -> docker exec <container id> bash
+
+
 
 install git 	 -> apt update && apt install git
 
