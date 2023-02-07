@@ -1,4 +1,11 @@
-Docker-----------------------------------
+<------------Docker Installation------------>
+sudo apt install 
+
+<------------verify nginx installation and check its version------------>
+-> ps -ef | grep nginx
+-> nginx -t
+-> nginx -v
+-> nginx -V
 
 to list all containers -> docker container ls
 			  docker container ps
