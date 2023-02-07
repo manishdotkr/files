@@ -25,6 +25,10 @@ going inside docker container -> docker exec -it <container id> bash
 <------------Stoped container's interactive shell ------------>
 docker start -ai myubuntu
 
+<------------start and stop containers------------>
+   docker stop <Container_ID>
+   docker start <Container_ID>
+
 
 <------------Software to installed in new Docker ------------>
  	 -> update apt upgrade -y
