@@ -1,1 +1,1 @@
-echo "hello world from github project"
+echo "hello world from github project - automatically triggered"
