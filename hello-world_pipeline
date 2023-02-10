@@ -1,12 +1,1 @@
-https://www.jenkins.io/doc/book/pipeline/getting-started/
-
-pipeline {
-    agent any 
-    stages {
-        stage('Stage 1') {
-            steps {
-                echo 'Hello world!' 
-            }
-        }
-    }
-}
+echo "hello world from github project"
