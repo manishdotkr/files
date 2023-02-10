@@ -1,1 +1,1 @@
-echo "hello world from github project - automatically triggered _ second time"
+echo "hello world from github project - automatically triggered from webhook"
