@@ -1,0 +1,4 @@
+
+data stored in nextcloud container is stored at - docker//var/www/html/data/admin/files
+
+mounting folder in nextcloud - docker run -it -v "/home/manish/Desktop":/srcc/Desktop nextcloud bash
