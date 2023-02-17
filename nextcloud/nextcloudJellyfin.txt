@@ -1,0 +1,13 @@
+
+data stored in nextcloud container is stored at - docker//var/www/html/data/admin/files
+
+mounting folder in nextcloud - docker run -it -v "/home/manish/Desktop":/srcc/Desktop nextcloud bash
+
+
+docker run -itd -v "/home/manish/Desktop/Nextcloud":/var/www/html/ -p 8080:80 nextcloud:latest
+
+
+------------------------------------Jellyfin----------------------------------------
+
+docker run -itd -v "/home/manish/Desktop/jellyfin":/media -p 8081:8096 linuxserver/jellyfin:latest
+
