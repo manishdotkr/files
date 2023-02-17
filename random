@@ -6,5 +6,6 @@ manishkumar- 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22496xyz
 
 finding local ip of system = hostname -I / hostname -i
 finding all attached hdd and storage devices = lsblk
+mounting hard drive - sudo mount /dev/sdb3 /mnt/sdb3
 
 
