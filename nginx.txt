@@ -1,3 +1,7 @@
+sudo apt-get remove --purge nginx*
+
+sudo apt update
+
 sudo apt install nginx -y
 
 cd /var/www/html/
